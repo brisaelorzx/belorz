@@ -1,5 +1,6 @@
 package com.example.belorz.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
@@ -25,8 +26,8 @@ public class Album {
     private Integer popularity;
     private String genres;
 
-    @NotNull
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "artist_id")
     private Artist artist;
 
