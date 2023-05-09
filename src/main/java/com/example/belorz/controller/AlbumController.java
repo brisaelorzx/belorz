@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/album")
+@CrossOrigin(origins = "*")
 public class AlbumController {
     @Autowired
     private AlbumService as;
