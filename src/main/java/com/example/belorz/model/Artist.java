@@ -26,6 +26,7 @@ public class Artist {
     private Integer popularity;
 
     @OneToMany(mappedBy = "artist")
+    @JsonIgnore
     private List<Album> albums;
 
 }

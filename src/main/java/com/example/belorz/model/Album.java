@@ -27,7 +27,6 @@ public class Album {
     private String genres;
 
     @ManyToOne
-    @JsonIgnore
     @JoinColumn(name = "artist_id")
     private Artist artist;
 

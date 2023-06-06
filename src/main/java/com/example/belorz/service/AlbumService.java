@@ -58,6 +58,7 @@ public class AlbumService {
             a.setReleaseYear(album.getReleaseYear());
             a.setPopularity(album.getPopularity());
             a.setGenres(album.getGenres());
+            a.setArtist(album.getArtist());
             ar.save(a);
             return ResponseEntity.status(OK).build();
         } catch (Exception e){
